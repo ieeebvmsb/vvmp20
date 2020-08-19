@@ -2750,8 +2750,8 @@ img.pull-right {
   left: 0;
   width: 100% !important;
   height: 100% !important;
-  -webkit-filter: grayscale(100%);
-  filter: grayscale(100%);
+  /* -webkit-filter: grayscale(100%);
+  filter: grayscale(100%); */
   border: none;
 }
 
