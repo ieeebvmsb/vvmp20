@@ -751,7 +751,7 @@ img.pull-right {
   letter-spacing: -0.36px;
   font-weight: 600;
   line-height: 18px;
-  color: #161362;
+  color: linear-gradient(to right top, #00ffff, #35fccc, #7cf58e, #b8e74e, #f3d100);;
   margin-bottom: 30px;
 }
 .banner-6 .banner-item .banner-content-wrap .sub-sub-title {
@@ -759,7 +759,7 @@ img.pull-right {
   letter-spacing: -0.36px;
   font-weight: 600;
   line-height: 18px;
-  color: #161362;
+  color: linear-gradient(to right top, #00ffff, #35fccc, #7cf58e, #b8e74e, #f3d100);;
   margin-bottom: 30px;
 }
 .banner-6 .banner-item .banner-content-wrap .banner-title {
