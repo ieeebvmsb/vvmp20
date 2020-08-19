@@ -1,0 +1,1809 @@
+<?php
+
+session_start();
+
+include 'connection.php';
+
+?>
+
+<html lang="en">
+  <!-- Mirrored from demo.themewinter.com/html/exhibz/index-7.html by HTTrack Website Copier/3.x [XR&CO'2014], Sun, 16 Aug 2020 19:36:51 GMT -->
+
+  <head>
+    <!-- Basic Page Needs ================================================== -->
+    <meta charset="utf-8" />
+
+    <!-- Mobile Specific Metas ================================================== -->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, user-scalable=0"
+    />
+    <link rel="icon" href="images/logos/VVMP 4 2.png">
+
+    <!-- Site Title -->
+    <title>Virtual Visit on Morden Physics | VVMP</title>
+
+    <!-- CSS
+         ================================================== -->
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+
+    <!-- FontAwesome -->
+    <link rel="stylesheet" href="css/font-awesome.min.css" />
+    <!-- Animation -->
+    <link rel="stylesheet" href="css/animate.css" />
+    <!-- magnific -->
+    <link rel="stylesheet" href="css/magnific-popup.css" />
+    <!-- carousel -->
+    <link rel="stylesheet" href="css/owl.carousel.min.css" />
+    <!-- isotop -->
+    <link rel="stylesheet" href="css/isotop.css" />
+    <!-- ico fonts -->
+    <link rel="stylesheet" href="css/xsIcon.css" />
+    <!-- Template styles-->
+    <link rel="stylesheet" href="css/style.css" />
+    <!-- Responsive styles-->
+    <link rel="stylesheet" href="css/responsive.css" />
+
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+    <style>
+      .parallax {
+        /* The image used */
+        background-image: url("images/logos/ieeesb.v1.jpg");
+
+        /* Set a specific height */
+        min-height: 500px;
+
+        /* Create the parallax scrolling effect */
+        background-attachment: fixed;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+      }
+
+      .parallax2 {
+        /* The image used */
+        background-image: url("images/logos/purple color bg.png");
+
+        /* Set a specific height */
+        min-height: 500px;
+
+        /* Create the parallax scrolling effect */
+        background-attachment: fixed;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+      }
+      .border_x {
+            color: #FFFFFF;
+            text-shadow: -1px 1px 0 #000,
+                          1px 1px 0 #000,
+                         1px -1px 0 #000;
+                        -1px -1px 0 #000;
+        }
+    </style>
+  </head>
+
+  <body>
+    <div class="body-inner">
+      <!-- Header start -->
+      <header id="header" class="header header header-transparent h-transparent2">
+        <div class="container">
+          <div class="row justify-content-between align-items-center">
+            <div class="col-lg-2 col-6">
+              <!-- logo-->
+              <a class="navbar-brand logo" href="index.php">
+                <img src="images/logos/VVMP Color-min.png" alt="" height="80px" width="160px"/>
+              </a>
+            </div>
+            <!-- end col -->
+
+            <div class="col-lg-8">
+              <nav class="navbar navbar-expand-lg text-lg-center justify-content-end" >
+                <button
+                  class="navbar-toggler"
+                  type="button"
+                  data-toggle="collapse"
+                  data-target="#navbarNavDropdown"
+                  aria-controls="navbarNavDropdown"
+                  aria-expanded="false"
+                  aria-label="Toggle navigation">
+                  <span class="navbar-toggler-icon"><i class="icon icon-menu"></i></span>
+                </button>
+                <div class="collapse navbar-collapse justify-content-end" id="navbarNavDropdown">
+                  <ul class="navbar-nav">
+                    <li class="dropdown nav-item active border_x">
+                      <a href="#">Home</a>
+                    </li>
+                    <li class="border_x">
+                      <a href="index.php#aboutvvmp">About VVMP</a>
+                    </li>
+                    <li class="border_x">
+                      <a href="index.php#experts">Experts</a>
+                    </li>
+                    <li class="border_x">
+                      <a href="index.php#schedule">Schedule</a>
+                    </li>
+                    <li class="border_x">
+                      <a href="index.php#fees">Register</a>
+                    </li>
+                  </ul>
+                </div>
+              </nav>
+            </div>
+            <!-- end col -->
+          </div>
+        </div>
+        <!-- container end-->
+      </header>
+      <!--/ Header end -->
+
+      <!-- banner start-->
+      <section class="hero-area banner-6 banner-6-alt">
+        <div id="particles-js"></div>
+        <script src="js/particles.js"></script>
+        <script src="js/app.js"></script>
+        <div class="banner-item">
+          <div class="container">
+            <div class="row" style="color: linear-gradient(to right top, #00ffff, #35fccc, #7cf58e, #b8e74e, #f3d100);">
+              <div class="col-lg-6">
+                <div class="banner-content-wrap">
+                  <!-- <div class="date-item wow fadeInUp" data-wow-duration="1.5s" data-wow-delay="900ms">
+                              <span class="event-day">09</span>
+                              <span class="event-month">June</span>
+                              <span class="event-year">2020</span>
+                        </div> -->
+                  <h2
+                    class="sub-sub-title wow fadeInUp"
+                    data-wow-duration="1.5s"
+                    data-wow-delay="800ms"
+                    style="color: #00ffff;">
+                    IEEE BVM SB presents
+                  </h2>
+                  <h2
+                    class="banner-title wow fadeInUp"
+                    data-wow-duration="1.5s"
+                    data-wow-delay="700ms"
+                    style="color: #fed100; margin-bottom: 0px;">
+                    Virtual Visit On <br />
+                    Morden Physics
+                  </h2>
+                  <h2
+                    class="sub-title wow fadeInUp"
+                    data-wow-duration="1.5s"
+                    data-wow-delay="800ms"
+                    style="color: #00ffff;">
+                    #explore beyond boundaries
+                  </h2>
+                  <!-- <div
+                    class="banner-info wow fadeInUp"
+                    data-wow-duration="1.5s"
+                    data-wow-delay="500ms">
+                    <div class="icon">
+                      <img src="images/shap/Shape-1.png" alt="" />
+                    </div>
+                    <h3 style="color: #7F3F98">
+                      Birla Vishvakarma Mahavidyalaya, Vallabh Vidhyanagar,
+                      Anand, Gujarat, India
+                    </h3>
+                  </div> -->
+                </div>
+                <!-- Banner content wrap end -->
+              </div>
+              <div class="col-lg-6" align="center">
+                <div class="banner-content-wrap">
+                  <img src="images/logos/VVMP 4 2.png" alt="" height="400px" width="350px"/>
+                </div>
+              </div>
+              <!-- col end-->
+            </div>
+            <!-- row end-->
+            <div class="row">
+              <div class="col-12">
+                <div class="ts-extra-feature banner-content-wrap">
+                  <div class="row align-items-center justify-content-between">
+                    <div class="col-md-4">
+                      <!-- Countdown end -->
+                      <div class="ts-count-down">
+                        <div
+                          class="countdown clearfix wow fadeInUp"
+                          data-wow-duration="1.5s"
+                          data-wow-delay="400ms">
+                          <div class="counter-item">
+                            <span class="days" style="color: #00ffff;">00</span>
+                            <div class="smalltext" style="color: #000000">Days</div>
+                            <b>:</b>
+                          </div>
+                          <div class="counter-item">
+                            <span class="hours" style="color: #00ffff;">00</span>
+                            <div class="smalltext" style="color: #000000">Hours</div>
+                            <b>:</b>
+                          </div>
+                          <div class="counter-item">
+                            <span class="minutes" style="color: #00ffff;">00</span>
+                            <div class="smalltext" style="color: #000000">Minutes</div>
+                            <b>:</b>
+                          </div>
+                          <div class="counter-item">
+                            <span class="seconds" style="color: #00ffff;">00</span>
+                            <div class="smalltext" style="color: #000000">Seconds</div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <!-- end col -->
+                    <div class="col-md-5">
+                      <div
+                        class="banner-btn wow fadeInUp"
+                        data-wow-duration="1.5s"
+                        data-wow-delay="300ms">
+                        <a href="index.php#fees" class="btn" style="background-image: linear-gradient(to right top, #7f3f98, #6d4284, #5d436e, #4e4259, #414042);">Register Now</a>
+                        <!-- <a href="#" class="btn btn-ticket">
+                          <i class="fa fa-plus-circle" aria-hidden="true"></i>
+                          ADD TO CALENDAR</a> -->
+                      </div>
+                    </div>
+                    <!-- end col -->
+                    <div class="col-md-2 text-right">
+                      <div class="ts-image">
+                        <img src="images/hero_area/small_vector.png" alt="" />
+                      </div>
+                    </div>
+                    <!-- end col -->
+                  </div>
+                  <!-- end row -->
+                </div>
+                <!-- end ts-extra-feature -->
+              </div>
+            </div>
+          </div>
+          <!-- Container end -->
+        </div>
+      </section>
+      <!-- banner end-->
+
+      <!-- ts-exprience start -->
+      <div class="container" style="padding: 2px 0 100px;">
+        <div class="row justify-content-center text-center">
+          <div class="col-lg-12">
+            <div class="ts-exprience-content">
+              <span style="color: #888888;">Who's Coming at VVMP'20....</span>
+              <h1 style="color: #7F3F98">Institutions and Labs</h1>
+            </div>
+          </div>
+          <!-- col end -->
+        </div>
+      </div>
+      <section class="ts-exprience">
+        <div class="container">
+          <!-- row end -->
+          <div class="scroll-image">
+            <div class="ts-scroll-image image-a scrollme">
+              <div
+                class="animateme"
+                data-when="span"
+                data-from="0"
+                data-to="1"
+                data-translatey="-500"
+                data-translatex="-350"
+              >
+                <img src="images/logos/speaker labs/nasa lab.jpg" alt=""
+                height="292px"
+                width="418px"/>
+              </div>
+            </div>
+
+            <div class="ts-scroll-image image-b scrollme">
+              <div
+                class="animateme"
+                data-when="span"
+                data-from="0"
+                data-to="1"
+                data-translatex="600">
+                  <img src="images/logos/speaker labs/plasma.jpg" alt=""
+                height="292px"
+                width="418px"/>
+              </div>
+            </div>
+            <div class="ts-scroll-image image-c scrollme">
+              <div
+                class="animateme"
+                data-when="span"
+                data-from="0"
+                data-to="1"
+                data-translatex="-600">
+                <img src="images/logos/speaker labs/wedtu.jpg" alt=""
+                height="292px"
+                width="418px"/>
+              </div>
+            </div>
+            <div class="ts-scroll-image image-d scrollme">
+              <div
+                class="animateme"
+                data-when="span"
+                data-from="0"
+                data-to="1"
+                data-translatey="600">
+                <img src="images/logos/speaker labs/lhc.jpg" alt=""
+                height="292px"
+                width="418px"/>
+              </div>
+            </div>
+            <div class="ts-scroll-image image-e scrollme">
+              <div
+                class="animateme"
+                data-when="span"
+                data-from="0"
+                data-to="1"
+                data-translatey="-350"
+                data-translatex="400">
+                <img src="images/logos/speaker labs/astrosat.jpg" alt=""
+                height="292px"
+                width="418px"/>
+              </div>
+            </div>
+            <a href="index.php#experts">
+            <div class="ts-scroll-image image-f scrollme">
+              <div
+                class="animateme"
+                data-when="span"
+                data-from="0"
+                data-to="1"
+                data-translatey="-500"
+                data-translatex="-350">
+                <img src="images/logos/speaker labs/jwst.jpg" alt=""
+                height="292px"
+                width="418px"/>
+              </div>
+            </div>
+            </a>
+          </div>
+        </div>
+      </section>
+      <!-- end ts-exprience -->
+
+      <!-- ts speaker start-->
+
+      <!-- ts funfact start-->
+
+      <!-- Navigation Options -->
+      <section
+        class="ts-intro-outcome"
+        style="background-color: #FFFFFF;">
+        <div class="container">
+          <!-- <div class="row">
+            <div class="col-lg-8 mx-auto">
+              <h2 class="section-title text-center" style="color: #7F3F98">
+                <span>Get...! Set...!</span>
+                Navigate
+              </h2>
+            </div>
+          </div> -->
+          <!-- row end-->
+          <div class="row">
+            <div class="col-lg-3 col-md-6 outcome-item">
+              <a href="https://ewh.ieee.org/sb/gujarat/bvmec/" target="_blank">
+                <div class="ts-single-outcome">
+                  <!-- <i class="icon-flash"></i> -->
+                  <img src="images/logos/IEEE BVM SB White.png" alt="" height="70px" width="100px">
+                  <br><br>
+                  <h3 class="ts-title">
+                    IEEE BVM SB
+                  </h3>
+                </div> </a><!-- single outcome end-->
+            </div>
+            <!-- col end-->
+            <div class="col-lg-3 col-md-6 outcome-item">
+              <a href="http://ecvm.net/index.html" target="_blank">
+                <div class="ts-single-outcome">
+                  <!-- <i class="icon-clock"></i> -->
+                  <img src="images/logos/CVM logo.png" alt="" height="70px" width="100px">
+                  <br><br>
+                  <h3 class="ts-title">
+                    Charutar Vidhya Mandal
+                  </h3>
+                </div> </a><!-- single outcome end-->
+            </div>
+            <!-- col end-->
+            <div class="col-lg-3 col-md-6 outcome-item">
+              <a href="https://www.bvmengineering.ac.in/" target="_blank">
+                <div class="ts-single-outcome">
+                  <!-- <i class="icon-users1"></i> -->
+                  <img src="images/logos/bvm-logo.png" alt="" height="70px" width="70px">
+                  <br><br>
+                  <h3 class="ts-title">
+                    Birla Vishvakarma Mahavidyalaya
+                  </h3>
+                </div> </a><!-- single outcome end-->
+            </div>
+            <!-- col end-->
+            <div class="col-lg-3 col-md-6 outcome-item">
+              <a href="https://ieee-npss.org/" target="_blank">
+                <div class="ts-single-outcome">
+                  <!-- <i class="icon-commerce"></i> -->
+                  <img src="images/logos/NPSS White.png" alt="" height="70px" width="80px">
+                  <br><br>
+                  <h3 class="ts-title">
+                    IEEE NPSS Chapter
+                  </h3>
+                </div> </a><!-- single outcome end-->
+            </div>
+            <!-- col end-->
+          </div>
+        </div>
+        <!-- container end-->
+      </section>
+      <!-- ts intro end-->
+
+      <!-- ts speaker start-->
+      <section
+        id="experts"
+        class="ts-speakers"
+        style="background-image: linear-gradient(to right bottom, #231f20, #282526, #2e2b2c, #333133, #393739, #3e3c3e, #424143, #474648, #4b4b4d, #4f4f52, #545456, #58595b);">
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-8 mx-auto">
+              <h2 class="section-title text-center" style="color: #7F3F98">
+                <span>Listen to the</span>
+                Experts of the VVMP'20
+              </h2>
+            </div>
+            <!-- col end-->
+          </div>
+          <!-- row end-->
+          <div class="row">
+            <div
+              class="col-lg-4 col-md-6 wow fadeInUp"
+              data-wow-duration="1.5s"
+              data-wow-delay="400ms">
+              <div class="ts-speaker">
+                <div class="speaker-img">
+                  <img
+                    class="img-fluid"
+                    src="images/speakers/goutam.png.jpg"
+                    alt=""
+                  />
+                  <a
+                    href="#popup_1"
+                    class="view-speaker ts-image-popup"
+                    data-effect="mfp-zoom-in">
+                    <i class="icon icon-plus"></i>
+                  </a>
+                </div>
+                <div class="ts-speaker-info">
+                  <h3 class="ts-title"><a href="#">Dr. Goutam Chattopadhyay</a></h3>
+                  <p class="ts-title" style="font-size: 20px">
+                    <a href=""><b>NASA - JPL IEEE Fellow/ General Chair</b></a>
+                  </p>
+                </div>
+              </div>
+              <!-- popup start-->
+              <div id="popup_1" class="container ts-speaker-popup mfp-hide">
+                <div class="row">
+                  <div class="col-lg-6">
+                    <div class="ts-speaker-popup-img">
+                      <img src="images/speakers/goutam.png.jpg" alt="" />
+                    </div>
+                  </div>
+                  <!-- col end-->
+                  <div class="col-lg-6">
+                    <div class="ts-speaker-popup-content">
+                      <h3 class="ts-title">Dr. Goutam Chattopadhyay</h3>
+                      <span class="speakder-designation">Senior Scientist, NASA - JPL
+IEEE Fellow/ General Chair, IEEE International Microwave and RF Conference
+</span>
+                      <img
+                        class="company-logo"
+                        src="images/logos/speaker labs/nasa2.png"
+                        alt=""
+                        height="100px"
+                        width="200px"
+                      />
+                      <p>
+                        ●	Dr. Goutam Chattopadhyay is a Senior Scientist at the NASA’s Jet Propulsion Laboratory, California Institute of Technology, a Visiting Professor at the Division of Physics, Mathematics, and Astronomy at the California Institute of Technology, Pasadena, USA, a BEL Distinguished Visiting Chair Professor at the Indian Institute of Science, Bangalore, India, and an Adjunct Professor at the Indian Institute of Technology, Kharagpur, India.</p>
+                       <p> ●	He received the Ph.D. degree in electrical engineering from the California Institute of Technology (Caltech), Pasadena, in 2000. He is a Fellow of IEEE (USA) and IETE (India) and an IEEE Distinguished Lecturer.</p>
+
+                      <h4 class="session-name">
+                        Session Title: Terahertz Radar Technology
+                      </h4>
+                      <div class="row">
+                        <div class="col-lg-6">
+                          <div class="speaker-session-info">
+                            <h4>5th September 2020</h4>
+                            <span>
+                                 9:30 AM IST
+                            </span>
+                          </div>
+                        </div>
+
+                      </div>
+                      <div class="ts-speakers-social">
+                        <a href="#"><i class="fa fa-linkedin"></i></a>
+                      </div>
+                    </div>
+                    <!-- ts-speaker-popup-content end-->
+                  </div>
+                  <!-- col end-->
+                </div>
+                <!-- row end-->
+              </div>
+              <!-- popup end-->
+            </div>
+            <!-- col end-->
+            <div
+              class="col-lg-4 col-md-6 wow fadeInUp"
+              data-wow-duration="1.5s"
+              data-wow-delay="500ms">
+              <div class="ts-speaker">
+                <div class="speaker-img">
+                  <img
+                    class="img-fluid"
+                    src="images/speakers/Mathew.jpg"
+                    alt=""
+                  />
+                  <a
+                    href="#popup_2"
+                    class="view-speaker ts-image-popup"
+                    data-effect="mfp-zoom-in">
+                    <i class="icon icon-plus"></i>
+                  </a>
+                </div>
+                <div class="ts-speaker-info">
+                  <h3 class="ts-title"><a href="#">Dr. Matthew Greenhouse</a></h3>
+                  <p class="ts-title" style="font-size: 20px">
+                    <a href=""><b>Astrophysicist at NASA Goddard Space Flight Centre</b></a>
+                  </p>
+                </div>
+              </div>
+              <!-- popup start-->
+              <div id="popup_2" class="container ts-speaker-popup mfp-hide">
+                <div class="row">
+                  <div class="col-lg-6">
+                    <div class="ts-speaker-popup-img">
+                      <img src="images/speakers/Mathew.jpg" alt="" />
+                    </div>
+                  </div>
+                  <!-- col end-->
+                  <div class="col-lg-6">
+                    <div class="ts-speaker-popup-content">
+                      <h3 class="ts-title">Dr. Matthew Greenhouse</h3>
+                      <span class="speakder-designation">Astrophysicist at NASA Goddard Space Flight Centre</span>
+                      <img
+                        class="company-logo"
+                        src="images/logos/speaker labs/nasa2.png"
+                        alt=""
+                        height="100px"
+                        width="200px"
+                      />
+                      <p>
+                        ●	Dr. Matthew Greenhouse served on the James Webb Space Telescope senior staff since 1997. He was responsible for the science instrument payload on the JWST which was delivered during 2016. He is Principal Investigator of the Next generation Micro-Shutter technology development.</p>
+                       <p>  ●	Dr. Matthew Greenhouse has Specialties in the Development of space flight infrared science instrumentation and related technologies; project science; technical management. </p>
+                        <p> ●	He received the Ph.D. degree in Astrophysics from the University of Wyoming in the year 1989.</p>
+
+                      <h4 class="session-name">
+                        Session Title: James Webb Space Telescope
+                      </h4>
+                      <div class="row">
+                        <div class="col-lg-6">
+                          <div class="speaker-session-info">
+                            <h4>6th September 2020</h4>
+                            <span>
+                              9:30 AM IST
+                            </span>
+                          </div>
+                        </div>
+
+                      </div>
+                      <div class="ts-speakers-social">
+                        <a href="#"><i class="fa fa-linkedin"></i></a>
+                      </div>
+                    </div>
+                    <!-- ts-speaker-popup-content end-->
+                  </div>
+                  <!-- col end-->
+                </div>
+                <!-- row end-->
+              </div>
+              <!-- popup end-->
+            </div>
+            <!-- col end-->
+            <div
+              class="col-lg-4 col-md-6 wow fadeInUp"
+              data-wow-duration="1.5s"
+              data-wow-delay="800ms">
+              <div class="ts-speaker">
+                <div class="speaker-img">
+                  <img
+                    class="img-fluid"
+                    src="images/speakers/Arvind.jpg"
+                    alt=""
+                  />
+                  <a
+                    href="#popup_5"
+                    class="view-speaker ts-image-popup"
+                    data-effect="mfp-zoom-in">
+                    <i class="icon icon-plus"></i>
+                  </a>
+                </div>
+                <div class="ts-speaker-info">
+                  <h3 class="ts-title"><a href="#">Dr. Arvind K. Singh</a></h3>
+                  <p class="ts-title" style="font-size: 20px">
+                    <a href=""><b>Senior Scientist, ISRO, Ahmedabad, India</b></a>
+                  </p>
+                </div>
+              </div>
+              <!-- popup start-->
+              <div id="popup_5" class="container ts-speaker-popup mfp-hide">
+                <div class="row">
+                  <div class="col-lg-6">
+                    <div class="ts-speaker-popup-img">
+                      <img src="images/speakers/Arvind.jpg" alt="" />
+                    </div>
+                  </div>
+                  <!-- col end-->
+                  <div class="col-lg-6">
+                    <div class="ts-speaker-popup-content">
+                      <h3 class="ts-title">Dr. Arvind K. Singh</h3>
+                      <span class="speakder-designation"
+                        >Senior Scientist, ISRO, Ahmedabad, India</span
+                      >
+                      <img
+                        class="company-logo"
+                        src="images/logos/speaker labs/isro.png"
+                        alt=""
+                        height="100px"
+                        width="141px"
+                      />
+                      <p>
+                        ●	Dr. Arvind K. Singh is a Senior Scientist at the ISRO, Ahmedabad division.</p>
+                        <p>●	He joined Space Applications Centre (ISRO), Ahmedabad in January 2001 after completing his M.Sc. and Ph.D. from Roorkee University (now IIT Roorkee) in Physics and Earth Sciences respectively.</p>
+                        <p>●	His working field is Signal and Image Processing towards satellite data processing, including various categories of satellites like Earth observation, Planetary and Astronomical.
+
+                      </p>
+                      <h4 class="session-name">
+                        Session Title: Astrosat- India's first mission on Space
+                      </h4>
+                      <div class="row">
+                        <div class="col-lg-6">
+                          <div class="speaker-session-info">
+                            <h4>6th September 2020</h4>
+                            <span>
+                              11:30 AM IST
+                            </span>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="ts-speakers-social">
+                        <a href="#"><i class="fa fa-linkedin"></i></a>
+                      </div>
+                    </div>
+                    <!-- ts-speaker-popup-content end-->
+                  </div>
+                  <!-- col end-->
+                </div>
+                <!-- row end-->
+              </div>
+              <!-- popup end-->
+            </div>
+            <!-- col end-->
+
+
+            <!-- <div
+              class="col-lg-3 col-md-6 wow fadeInUp"
+              data-wow-duration="1.5s"
+              data-wow-delay="600ms">
+              <div class="ts-speaker">
+                <div class="speaker-img">
+                  <img
+                    class="img-fluid"
+                    src="images/speakers/Steven.jpg"
+                    alt=""
+                  />
+                  <a
+                    href="#popup_3"
+                    class="view-speaker ts-image-popup"
+                    data-effect="mfp-zoom-in"
+                  >
+                    <i class="icon icon-plus"></i>
+                  </a>
+                </div>
+                <div class="ts-speaker-info">
+                  <h3 class="ts-title"><a href="#">Dr. Steven Goldfarb </a></h3>
+                  <p style="color: #7F3F98">
+                     Researcher at ATLAS Experiment, CERN
+                  </p>
+                </div>
+              </div>
+              <div id="popup_3" class="container ts-speaker-popup mfp-hide">
+                <div class="row">
+                  <div class="col-lg-6">
+                    <div class="ts-speaker-popup-img">
+                      <img src="images/speakers/Steven.jpg" alt="" />
+                    </div>
+                  </div>
+                  <div class="col-lg-6">
+                    <div class="ts-speaker-popup-content">
+                      <h3 class="ts-title">Dr. Steven Goldfarb</h3>
+                      <span class="speakder-designation">Researcher at ATLAS Experiment, CERN</span>
+                      <img
+                        class="company-logo"
+                        src="images/logos/speaker labs/cern.jpg"
+                        alt=""
+                        height="100px"
+                        width="141px"
+                      />
+                      <p>
+                        ●	Dr Steven Goldfarb is a particle physicist from the University of Melbourne working on the ATLAS Experiment on the Large Hadron Collider (LHC) at CERN, the European Laboratory for Particle Physics.</p>
+                        <p>●	He also co-chairs the International Particle Physics Outreach Group (IPPOG), a collaboration of researchers and communication experts committed to improving and sharing best practices for educating the public of the goals and achievements of particle physics.
+
+                      </p>
+                      <h4 class="session-name">
+                        Session Title: Virtual visit to ATLAS Experiments at LHC
+                      </h4>
+                      <div class="row">
+                        <div class="col-lg-6">
+                          <div class="speaker-session-info">
+                            <h4>7th September 2020</h4>
+                            <span>
+                              5:30 PM IST
+                            </span>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="ts-speakers-social">
+                        <a href="#"><i class="fa fa-linkedin"></i></a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div> -->
+            <!-- col end-->
+
+
+            <!-- <div
+              class="col-lg-4 col-md-6 wow fadeInUp"
+              data-wow-duration="1.5s"
+              data-wow-delay="700ms">
+              <div class="ts-speaker">
+                <div class="speaker-img">
+                  <img
+                    class="img-fluid"
+                    src="images/speakers/clara.png"
+                    alt=""
+                  />
+                  <a
+                    href="#popup_7"
+                    class="view-speaker ts-image-popup"
+                    data-effect="mfp-zoom-in">
+                    <i class="icon icon-plus"></i>
+                  </a>
+                </div>
+                <div class="ts-speaker-info">
+                  <h3 class="ts-title"><a href="#">Dr. Clara Nellist</a></h3>
+                  <p style="color: #7F3F98">
+                    Excellence Initiative Fellow at Radboud University in Nijmegen, and a science communicator
+                  </p>
+                </div>
+              </div>
+              <div id="popup_7" class="container ts-speaker-popup mfp-hide">
+                <div class="row">
+                  <div class="col-lg-6">
+                    <div class="ts-speaker-popup-img">
+                      <img src="images/speakers/clara.png" alt="" />
+                    </div>
+                  </div>
+                  <div class="col-lg-6">
+                    <div class="ts-speaker-popup-content">
+                      <h3 class="ts-title">Dr. Clara Nellist</h3>
+                      <span class="speakder-designation">Excellence Initiative Fellow at Radboud University in Nijmegen, and a science communicator</span>
+                      <img
+                        class="company-logo"
+                        src="images/logos/speaker labs/radboud.png"
+                        alt=""
+                        height="100px"
+                        width="241px"
+                      />
+                      <p>●	Dr. Clara Nellist is an Excellence Initiative Fellow at Radboud University in Nijmegen, and a science communicator.</p>
+                      <p>●	Her research is with the ATLAS Experiment at CERN, with a focus on the analysis of top quarks coupling to massive bosons.</p>
+                      <p>●	She has also worked on novel pixel detectors for the upgrade of the inner layers of the detector, and on the analysis of the Higgs boson when it changes into two tau particles.</p>
+                      <h4 class="session-name">
+                        Session Title: Virtual visit to ATLAS Experiments at LHC
+                      </h4>
+                      <div class="row">
+                        <div class="col-lg-6">
+                          <div class="speaker-session-info">
+                            <h4>7th September 2020</h4>
+                            <span>
+                              5:30 PM IST
+                            </span>
+                          </div>
+                        </div>
+
+                      </div>
+                      <div class="ts-speakers-social">
+                        <a href="#"><i class="fa fa-linkedin"></i></a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div> -->
+            <!-- col end-->
+
+
+
+            <!-- <div
+              class="col-lg-4 col-md-6 wow fadeInUp"
+              data-wow-duration="1.5s"
+              data-wow-delay="900ms">
+              <div class="ts-speaker">
+                <div class="speaker-img">
+                  <img
+                    class="img-fluid"
+                    src="images/speakers/Cathy.jpg"
+                    alt=""
+                  />
+                  <a
+                    href="#popup_6"
+                    class="view-speaker ts-image-popup"
+                    data-effect="mfp-zoom-in"
+                  >
+                    <i class="icon icon-plus"></i>
+                  </a>
+                </div>
+                <div class="ts-speaker-info">
+                  <h3 class="ts-title"><a href="#"> Ms. Cathy Suo </a></h3>
+                  <p style="color: #7F3F98">
+                    Head of Division (Wind Energy System) at DTU Wind Energy (Technical University of Denmark)
+                  </p>
+                </div>
+              </div>
+              <div id="popup_6" class="container ts-speaker-popup mfp-hide">
+                <div class="row">
+                  <div class="col-lg-6">
+                    <div class="ts-speaker-popup-img">
+                      <img src="images/speakers/Cathy.jpg" alt="" />
+                    </div>
+                  </div>
+                  <div class="col-lg-6">
+                    <div class="ts-speaker-popup-content">
+                      <h3 class="ts-title"> Ms. Cathy Suo</h3>
+                      <span class="speakder-designation"> Head of Division (Wind Energy System) at DTU Wind Energy (Technical University of Denmark)</span>
+                      <img
+                        class="company-logo"
+                        src="images/logos/speaker labs/DTU_Logo.png"
+                        alt=""
+                        height="100px"
+                        width="241px"
+                      />
+                      <p>
+                        ●	Ms. Cathy Suo is currently working as Head of Division (Wind Energy System) at DTU Wind Energy.</p>
+                        <p>●	She has done MBA from INSEAD, having 20 years of experience in Corporate strategy, Business Development, Procurement and Project management in Energy section and various other leading roles.</p>
+                        <p>●	She has an educational background in Software Engineering and Power Engineering.</p>
+                        <p>●	She has worked in multiple locations including China, France, Singapore, UK, Denmark.
+
+                      </p>
+                      <h4 class="session-name">
+                        Session Title: Wind Energy System at DTU
+                      </h4>
+                      <div class="row">
+                        <div class="col-lg-6">
+                          <div class="speaker-session-info">
+                            <h4>12th September 2020</h4>
+                            <span>
+                              1:00 PM IST
+                            </span>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="ts-speakers-social">
+                        <a href="#"><i class="fa fa-linkedin"></i></a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div> -->
+            <!-- col end-->
+
+
+
+            <!-- <div
+              class="col-lg-4 col-md-6 wow fadeInUp"
+              data-wow-duration="1.5s"
+              data-wow-delay="700ms">
+              <div class="ts-speaker">
+                <div class="speaker-img">
+                  <img
+                    class="img-fluid"
+                    src="images/speakers/Ligia.jpg"
+                    alt=""
+                  />
+                  <a
+                    href="#popup_4"
+                    class="view-speaker ts-image-popup"
+                    data-effect="mfp-zoom-in"
+                  >
+                    <i class="icon icon-plus"></i>
+                  </a>
+                </div>
+                <div class="ts-speaker-info">
+                  <h3 class="ts-title"><a href="#">Dr. Ligia Diana Amorim</a></h3>
+                  <p style="color: #7F3F98">
+                    PhD. Postdoctoral Scholar at Lawrence Berkeley Lab, California, USA
+                  </p>
+                </div>
+              </div>
+              <div id="popup_4" class="container ts-speaker-popup mfp-hide">
+                <div class="row">
+                  <div class="col-lg-6">
+                    <div class="ts-speaker-popup-img">
+                      <img src="images/speakers/Ligia.jpg" alt="" />
+                    </div>
+                  </div>
+                  <div class="col-lg-6">
+                    <div class="ts-speaker-popup-content">
+                      <h3 class="ts-title">Dr. Ligia Diana Amorim</h3>
+                      <span class="speakder-designation">PhD. Postdoctoral Scholar at Lawrence Berkeley Lab, California, USA</span>
+                      <img
+                        class="company-logo"
+                        src="images/logos/speaker labs/ber_lab.png"
+                        alt=""
+                        height="100px"
+                        width="241px"
+                      />
+                      <p>
+                        ●	Dr. Ligia Diana Amorim has been working as Postdoctoral Researcher at Berkeley Lab, California, USA since 2019. She is developing the open source C++ Exascale Computing Project WarpX open-source code for high performance and portability in CPUs and GPUs.</p>
+                        <p>●	She has also worked in Modeling future multi-plasma acceleration stages and current laser plasma Wakefield acceleration and radiation sources configurations explored at the Berkeley Lab Laser Accelerator experimental facility.</p>
+                        <p>●	She has completed her PhD from instituto superior in physics engineering in 2017. During her PhD research she has worked in extremely high energy particle beam and laser plasma based Wakefield accelerator physics.
+
+                      </p>
+                      <h4 class="session-name">
+                        Session Title: Plasma based Technology for Future Particle Colliders
+                      </h4>
+                      <div class="row">
+                        <div class="col-lg-6">
+                          <div class="speaker-session-info">
+                            <h4>13th September 2020</h4>
+                            <span>
+                              9:30 AM IST
+                            </span>
+                          </div>
+                        </div>
+
+                      </div>
+                      <div class="ts-speakers-social">
+                        <a href="#"><i class="fa fa-linkedin"></i></a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div> -->
+            <!-- col end-->
+
+
+
+            <!-- shap img-->
+            <!-- <div class="speaker-shap">
+              <img
+                class="shap1"
+                src="images/shap/home_speaker_memphis1.png"
+                alt=""
+              />
+              <img
+                class="shap2"
+                src="images/shap/home_speaker_memphis2.png"
+                alt=""
+              />
+              <img
+                class="shap3"
+                src="images/shap/home_speaker_memphis3.png"
+                alt=""
+              />
+            </div> -->
+            <!-- shap img end-->
+          </div>
+        </div>
+      </section>
+      <!-- ts speaker end-->
+
+      <!-- ts experience start-->
+      <section id="ts-experiences" class="ts-experiences">
+        <div class="parallax"></div>
+      </section>
+      <!-- ts experience end-->
+
+      <!-- ts schedule start-->
+      <section class="ts-schedule" id="schedule">
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-12 mx-auto">
+              <h2 class="section-title" style="color: #7F3F98">
+                <span>Be on Time..!!</span>
+                Schedule of the VVMP'20
+              </h2>
+              <!-- <div class="ts-schedule-nav">
+                <ul class="nav nav-tabs justify-content-center" role="tablist">
+                  <li class="nav-item">
+                    <a
+                      class="active"
+                      title="Day 1"
+                      href="#date1"
+                      role="tab"
+                      data-toggle="tab">
+                      <h3>5th September</h3>
+                      <span>Saturday</span>
+                    </a>
+                  </li>
+                  <li class="nav-item">
+                    <a
+                      class=""
+                      href="#date2"
+                      title="Day 2"
+                      role="tab"
+                      data-toggle="tab">
+                      <h3>6th September</h3>
+                      <span>Sunday</span>
+                    </a>
+                  </li>
+                  <li class="nav-item">
+                    <a
+                      class=""
+                      href="#date3"
+                      title="Day 3"
+                      role="tab"
+                      data-toggle="tab">
+                      <h3>7th September</h3>
+                      <span>Monday</span>
+                    </a>
+                  </li>
+                  <li class="nav-item">
+                    <a
+                      class=""
+                      href="#date4"
+                      title="Day 4"
+                      role="tab"
+                      data-toggle="tab">
+                      <h3>12th September</h3>
+                      <span>Saturday</span>
+                    </a>
+                  </li>
+                  <li class="nav-item">
+                    <a
+                      class=""
+                      href="#date5"
+                      title="Day 5"
+                      role="tab"
+                      data-toggle="tab">
+                      <h3>13th September</h3>
+                      <span>Sunday</span>
+                    </a>
+                  </li>
+                </ul>
+              </div> -->
+            </div>
+            <div class="col-lg-12 mx-auto">
+              <h2 class="section-title" style="color: #414042;">
+                Schedule will be Released Soon
+                <br><br>
+                Stay Connected....
+              </h2>
+              <!-- <h6 class="section-title" style="size: 1px; color: #414042; ">
+                Stay Connected....
+              </h6> -->
+            </div>
+            <!-- col end-->
+          </div>
+          <!-- row end-->
+          <!-- <div class="row">
+            <div class="col-lg-12">
+              <div class="tab-content schedule-tabs schedule-tabs-item">
+                <div role="tabpanel" class="tab-pane active" id="date1">
+                  <div class="row">
+                    <div class="col-lg-6">
+                      <div class="schedule-listing-item schedule-left">
+                        <img
+                          class="schedule-slot-speakers"
+                          src="images/speakers/goutam.png.jpg"
+                          alt=""
+                        />
+                        <span class="schedule-slot-time" style="color: #414042">9:30 AM IST onwards</span>
+                        <h3 class="schedule-slot-title" style="color: #7F3F98">Dr. Goutam Chattopadhyay</h3>
+                        <p style="color: #414042">
+                          Terahertz Radar Technology
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="schedule-listing-btn">
+                    <a href="index.php#contact" class="btn" style="background-image: linear-gradient(to left, #7f3f98, #6d4284, #5d436e, #4e4259, #414042);">More Details</a>
+                  </div>
+                </div>
+
+                <div role="tabpanel" class="tab-pane" id="date2">
+                  <div class="row">
+                    <div class="col-lg-6">
+                      <div class="schedule-listing-item schedule-left">
+                        <img
+                          class="schedule-slot-speakers"
+                          src="images/speakers/Mathew.jpg"
+                          alt=""
+                        />
+                        <span class="schedule-slot-time" style="color: #414042">9:30 AM IST onwards</span>
+                        <h3 class="schedule-slot-title" style="color: #7F3F98">Dr. Matthew Greenhouse</h3>
+                        <p style="color: #414042">
+                          James Webb Space Telescope
+                        </p>
+                      </div>
+                    </div>
+                    <div class="col-lg-6">
+                      <div class="schedule-listing-item schedule-right">
+                        <img
+                          class="schedule-slot-speakers"
+                          src="images/speakers/Arvind.jpg"
+                          alt=""
+                        />
+                        <span class="schedule-slot-time" style="color: #414042">11:30 AM IST onwards</span>
+                        <h3 class="schedule-slot-title" style="color: #7F3F98">
+                          Dr. Arvind K. Singh
+                        </h3>
+                        <p style="color: #414042">
+                          Astrosat- India's first mission on Space
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="schedule-listing-btn">
+                    <a href="index.php#contact" class="btn" style="background-image: linear-gradient(to left, #7f3f98, #6d4284, #5d436e, #4e4259, #414042);">More Details</a>
+                  </div>
+                </div>
+                <div role="tabpanel" class="tab-pane" id="date3">
+                  <div class="row">
+                    <div class="col-lg-6">
+                      <div class="schedule-listing-item schedule-left">
+                        <img
+                          class="schedule-slot-speakers"
+                          src="images/speakers/Steven.jpg"
+                          alt=""
+                        />
+                        <span class="schedule-slot-time" style="color: #414042"> 5:30 PM IST onwards</span>
+                        <h3 class="schedule-slot-title" style="color: #7F3F98">Dr. Steven Goldfarb</h3>
+                        <p style="color: #414042">
+                          Virtual visit to ATLAS Experiments at LHC
+                        </p>
+                      </div>
+                    </div>
+                    <div class="col-lg-6">
+                      <div class="schedule-listing-item schedule-right" style="margin-top: 0px;">
+                        <img
+                          class="schedule-slot-speakers"
+                          src="images/speakers/clara.png"
+                          alt=""
+                        />
+                        <span class="schedule-slot-time" style="color: #414042">5:30 PM IST onwards</span>
+                        <h3 class="schedule-slot-title" style="color: #7F3F98"> Dr. Clara Nellist </h3>
+                        <p style="color: #414042">
+                          Virtual visit to ATLAS Experiments at LHC
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="schedule-listing-btn">
+                    <a href="index.php#contact" class="btn" style="background-image: linear-gradient(to left, #7f3f98, #6d4284, #5d436e, #4e4259, #414042);">More Details</a>
+                  </div>
+                </div>
+                <div role="tabpanel" class="tab-pane" id="date4">
+                  <div class="row">
+                    <div class="col-lg-6">
+                      <div class="schedule-listing-item schedule-left">
+                        <img
+                          class="schedule-slot-speakers"
+                          src="images/speakers/Cathy.jpg"
+                          alt=""
+                        />
+                        <span class="schedule-slot-time" style="color: #414042">1:00 PM IST onwards</span>
+                        <h3 class="schedule-slot-title" style="color: #7F3F98">Ms. Cathy Suo</h3>
+                        <p style="color: #414042">
+                          Wind Energy System at DTU
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="schedule-listing-btn">
+                    <a href="index.php#contact" class="btn" style="background-image: linear-gradient(to left, #7f3f98, #6d4284, #5d436e, #4e4259, #414042);">More Details</a>
+                  </div>
+                </div>
+                <div role="tabpanel" class="tab-pane" id="date5">
+                  <div class="row">
+                    <div class="col-lg-6">
+                      <div class="schedule-listing-item schedule-left">
+                        <img
+                          class="schedule-slot-speakers"
+                          src="images/speakers/Ligia.jpg"
+                          alt=""
+                        />
+                        <span class="schedule-slot-time" style="color: #414042">9:30 AM IST onwards</span>
+                        <h3 class="schedule-slot-title" style="color: #7F3F98">Dr. Ligia Diana Amorim</h3>
+                        <p style="color: #414042">
+                          Plasma based Technology for Future Particle Colliders
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="schedule-listing-btn">
+                    <a href="index.php#contact" class="btn" style="background-image: linear-gradient(to left, #7f3f98, #6d4284, #5d436e, #4e4259, #414042);">More Details</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div> -->
+        </div>
+        <!-- container end-->
+      </section>
+      <!-- ts schedule end-->
+
+      <!-- ts pricing start-->
+      <!-- <section class="ts-pricing gradient"> -->
+      <div class="parallax2">
+      <section class="ts-pricing" id="fees">
+          <div class="container" style="padding: 50px 0 50px;">
+            <div class="row">
+              <div class="col-lg-12">
+                <h2 class="section-title" style="color: #ffffff;">
+                  <span style="color: #ffffff;">Pricing Plans</span>
+                  Get your Ticket
+                </h2>
+              </div>
+              <!-- section title end-->
+            </div>
+            <!-- col end-->
+            <!-- row end-->
+            <div class="row">
+              <div
+                class="col-lg-4 wow fadeInUp"
+                data-wow-duration="1.5s"
+                data-wow-delay="400ms">
+                <div class="pricing-item">
+                  <img
+                    class="pricing-dot"
+                    src="images/pricing/dot.png"
+                    alt=""
+                  />
+                  <div class="ts-pricing-box">
+                    <div class="ts-pricing-header">
+                      <h2 class="ts-pricing-name" style="color: #7F3F98">IEEE Members</h2>
+                      <h3 class="ts-pricing-price" style="color: #414042">
+                        <span class="currency">Rs.</span>20
+                      </h3>
+                    </div>
+                    <!-- <div class="ts-pricing-progress">
+                      <p class="amount-progres-text">
+                        Available tickets for this price
+                      </p>
+                      <div class="ts-progress">
+                        <div
+                          class="ts-progress-inner"
+                          style="width: 100%;"
+                        ></div>
+                      </div>
+                      <p class="ts-pricing-value">500/500</p>
+                    </div> -->
+                    <br>
+                    <div class="promotional-code">
+                      <p class="promo-code-text" style="color: #414042">Register Now..!!</p>
+                      <a href="registerHTML.php" class="btn pricing-btn" style="background-image: linear-gradient(to left, #7f3f98, #6d4284, #5d436e, #4e4259, #414042);">Register Here</a>
+                    </div>
+                  </div>
+                  <!-- ts pricing box-->
+                  <img
+                    class="pricing-dot1"
+                    src="images/pricing/dot.png"
+                    alt=""
+                  />
+                </div>
+              </div>
+              <!-- col end-->
+              <div
+                class="col-lg-4 wow fadeInUp"
+                data-wow-duration="1.5s"
+                data-wow-delay="500ms">
+                <div class="pricing-item">
+                  <img
+                    class="pricing-dot"
+                    src="images/pricing/dot.png"
+                    alt=""
+                  />
+                  <div class="ts-pricing-box">
+                    <span class="big-dot"></span>
+                    <div class="ts-pricing-header">
+                      <h2 class="ts-pricing-name" style="color: #7F3F98">Non-IEEE Members</h2>
+                      <h3 class="ts-pricing-price" style="color: #414042">
+                        <span class="currency">Rs.</span>40
+                      </h3>
+                    </div>
+                    <!-- <div class="ts-pricing-progress">
+                      <p class="amount-progres-text">
+                        Available tickets for this price
+                      </p>
+                      <div class="ts-progress">
+                        <div
+                          class="ts-progress-inner"
+                          style="width: 75%;"
+                        ></div>
+                      </div>
+                      <p class="ts-pricing-value">350/500</p>
+                    </div> -->
+                    <br>
+                    <div class="promotional-code">
+                      <p class="promo-code-text" style="color: #414042">Register Now..!!</p>
+                      <a href="registerHTML.php" class="btn pricing-btn" style="background-image: linear-gradient(to left, #7f3f98, #6d4284, #5d436e, #4e4259, #414042);">Register Here</a>
+                    </div>
+                  </div>
+                  <!-- ts pricing box-->
+                  <img
+                    class="pricing-dot1"
+                    src="images/pricing/dot.png"
+                    alt=""
+                  />
+                </div>
+              </div>
+              <!-- col end-->
+              <div
+                class="col-lg-4 wow fadeInUp"
+                data-wow-duration="1.5s"
+                data-wow-delay="500ms">
+                <div class="pricing-item">
+                  <img
+                    class="pricing-dot"
+                    src="images/pricing/dot.png"
+                    alt=""
+                  />
+                  <div class="ts-pricing-box">
+                    <span class="big-dot"></span>
+                    <div class="ts-pricing-header">
+                      <h2 class="ts-pricing-name" style="color: #7F3F98">Faculties &amp; professionals</h2>
+                      <h3 class="ts-pricing-price" style="color: #414042">
+                        <span class="currency">Rs.</span>50
+                      </h3>
+                    </div>
+                    <!-- <div class="ts-pricing-progress">
+                      <p class="amount-progres-text">
+                        Available tickets for this price
+                      </p>
+                      <div class="ts-progress">
+                        <div
+                          class="ts-progress-inner"
+                          style="width: 75%;"
+                        ></div>
+                      </div>
+                      <p class="ts-pricing-value">350/500</p>
+                    </div> -->
+                    <div class="promotional-code">
+                      <p class="promo-code-text" style="color: #414042">Register Now..!!</p>
+                      <a href="registerHTML.php" class="btn pricing-btn" style="background-image: linear-gradient(to left, #7f3f98, #6d4284, #5d436e, #4e4259, #414042);">Register Here</a>
+                    </div>
+                  </div>
+                  <!-- ts pricing box-->
+                  <img
+                    class="pricing-dot1"
+                    src="images/pricing/dot.png"
+                    alt=""
+                  />
+                </div>
+              </div>
+              <!-- col end-->
+            </div>
+          </div>
+          <!-- container end-->
+          <!-- <div
+            class="speaker-shap wow fadeInUp"
+            data-wow-duration="1.5s"
+            data-wow-delay="400ms"
+          >
+            <img class="shap2" src="images/shap/pricing_memphis1.png" alt="" />
+          </div> -->
+      </section>
+      </div>
+      <!-- ts pricing end-->
+
+      <section class="ts-intro-item section-bg">
+        <div class="container" id="aboutvvmp">
+          <div class="row">
+            <div
+              class="col-lg-12 wow fadeInUp"
+              data-wow-duration="1.5s"
+              data-wow-delay="300ms">
+              <div class="intro-left-content">
+                <h2 class="column-title" style="color: #414042">
+                  <span>Sprinkels on</span>
+                  Virtual Visit On<br />
+                  Morden Physics
+                </h2>
+                <p style="color: #414042" align="justify">
+                  IEEE BVM SB is organizing its next flagship event under the ‘IEEE NPSS - Nuclear & Plasma Sciences Society’ called ‘Virtual Visit on Modern Physics 2020’.  The event’s theme is on delivering practical experience and knowledge to enrich the students and academic professionals alike with topics based on Modern Physics like Nuclear & Plasma Sciences, Space Technologies, & Renewable Energy, etc.
+                  <br>
+                  In this unprecedented time of the pandemic, all students and professionals who participate can go beyond physical boundaries with the modern-day technology to learn from the experts around the world. So, in order to impart something different and interesting we are organizing these Virtual Visit sessions.
+                </p>
+                <a href="index.php#fees" class="btn" style="background-image: linear-gradient(to right top, #7f3f98, #6d4284, #5d436e, #4e4259, #414042);">Register Now..!!</a>
+              </div>
+            </div>
+          </div>
+          <br><br>
+          <div class="row">
+            <!-- col end-->
+                <div
+                  class="col-lg-6 wow fadeInUp"
+                  data-wow-duration="1.5s"
+                  data-wow-delay="400ms">
+                  <div class="single-intro-text mb-30">
+                    <!-- <i class="icon icon-speaker"></i> -->
+                    <h3 class="ts-title" style="color: #414042">About BVM</h3>
+                    <p style="color: #7F3F98" align="justify" style="font-size: 4px;">
+                      Birla Vishvakarma Mahavidyalaya Engineering College, an Autonomous Institute managed by Charutar Vidya Mandal was established in 1948 from donations made by the Birla Education Trust on the behest of Sardar Vallabhbhai Patel, the first Home Minister of independent India. The college was inaugurated by Lord Mountbatten, the Governor General of India on 14 June 1948, and rose to prominence under the stewardship of Prof. Junnarkar and Prof. K.M. Dholakia. It was one of the few colleges in India that adopted the progressive credit system of relative grading in India. The college has awarded degrees to over 20,000 graduates.
+                    </p>
+                    <!-- <span class="count-number">01</span> -->
+                    <br>
+                    <div
+                      class="banner-btn wow fadeInUp"
+                      data-wow-duration="1.5s"
+                      data-wow-delay="300ms"
+                      align="center">
+                      <a href="https://www.bvmengineering.ac.in/" class="btn" style="background-image: linear-gradient(to right bottom, #7f3f98, #6d4284, #5d436e, #4e4259, #414042);" target="_blank">More About BVM</a>
+                      <!-- <a href="#" class="btn btn-ticket">
+                        <i class="fa fa-plus-circle" aria-hidden="true"></i>
+                        ADD TO CALENDAR</a> -->
+                    </div>
+                  </div>
+                  <!-- single intro text end-->
+                </div>
+                <!-- col end-->
+                <div
+                  class="col-lg-6 wow fadeInUp"
+                  data-wow-duration="1.5s"
+                  data-wow-delay="500ms">
+                  <div class="single-intro-text mb-30">
+                    <!-- <i class="icon icon-netwrorking"></i> -->
+                    <h3 class="ts-title" style="color: #7F3F98">About CVM</h3>
+                    <p style="color: #414042" align="justify" style="font-size: 4px;">
+                      The first fifty years of CVM coincided more or less with the second half of the twentieth century. Judged by any yardstick, these first fifty years of CVM have been immensely successful. The vision, dedication and commitment of the founders of CVM and its subsequent leaders can be seen clearly today in the results of their tireless efforts. Vallabh Vidyanagar is today an impressive and thriving educational campus in the heart of Charutar, which is itself heartland of Gujarat. Naturally CVM must also make future plans which enable it to generate successful responses to some of the challenges which the society is going to face.
+                    </p>
+                    <!-- <span class="count-number">02</span> -->
+                    <br>
+                    <div
+                      class="banner-btn wow fadeInUp"
+                      data-wow-duration="1.5s"
+                      data-wow-delay="300ms"
+                      align="center">
+                      <a href="http://ecvm.net/index.html" class="btn" style="background-image: linear-gradient(to left bottom, #7f3f98, #6d4284, #5d436e, #4e4259, #414042);" target="_blank">More About CVM</a>
+                      <!-- <a href="#" class="btn btn-ticket">
+                        <i class="fa fa-plus-circle" aria-hidden="true"></i>
+                        ADD TO CALENDAR</a> -->
+                    </div>
+                  </div>
+                  <!-- single intro text end-->
+                </div>
+              </div>
+              <div class="row">
+                <!-- col end-->
+                <div
+                  class="col-lg-6 wow fadeInUp"
+                  data-wow-duration="1.5s"
+                  data-wow-delay="600ms">
+                  <div class="single-intro-text mb-30">
+                    <!-- <i class="icon icon-people"></i> -->
+                    <h3 class="ts-title" style="color: #7F3F98">About IEEE BVM SB</h3>
+                    <p style="color: #414042" align="justify" style="font-size: 4px;">
+                      IEEE BVM SB was established on 29th August 2016. The main motto of the Student Branch is to connect engineers from various departments of the institute to come together, identify problem statements and act accordingly to improvise and promote Technical Activities which can, in turn, be formed for "Advancing Technology for Humanity". It aims to give students the cutting-edge skills, confidence, and intellect with which they can easily face the competitive world and contribute to human welfare by organizing competitions, workshops, expert talks, seminars, and symposiums on different technical topics.
+                    </p>
+                    <!-- <span class="count-number">03</span> -->
+                    <br>
+                    <div
+                      class="banner-btn wow fadeInUp"
+                      data-wow-duration="1.5s"
+                      data-wow-delay="300ms"
+                      align="center">
+                      <a href="https://ewh.ieee.org/sb/gujarat/bvmec/" class="btn" style="background-image: linear-gradient(to right top, #7f3f98, #6d4284, #5d436e, #4e4259, #414042);" target="_blank">More About IEEE BVM SB</a>
+                      <!-- <a href="#" class="btn btn-ticket">
+                        <i class="fa fa-plus-circle" aria-hidden="true"></i>
+                        ADD TO CALENDAR</a> -->
+                    </div>
+                  </div>
+                  <!-- single intro text end-->
+                </div>
+                <!-- col end-->
+                <div
+                  class="col-lg-6 wow fadeInUp"
+                  data-wow-duration="1.5s"
+                  data-wow-delay="700ms">
+                  <div class="single-intro-text mb-30">
+                    <!-- <i class="icon icon-fun"></i> -->
+                    <h3 class="ts-title" style="color: #414042">About NPSS BVM</h3>
+                    <p style="color: #7F3F98" align="justify" style="font-size: 4px;">
+                      Nuclear and Plasma Science Society was originated in 2018 at IEEE BVM SB as the Professional Group on Nuclear Science within the IRE. The IEEE Nuclear and Plasma Sciences Society (NPSS) covers the fields of Fusion Technology, Nuclear Medical and Imaging Sciences, Particle Accelerator Science and Technology, Pulsed Power Systems, Radiation Effects, Radiation Instrumentation, Plasma Sciences and Applications, Standards for Nuclear Instruments and Detectors, and Computer Applications in Nuclear and Plasma Sciences.
+                    </p>
+                    <!-- <span class="count-number">04</span> -->
+                    <br>
+                    <div
+                      class="banner-btn wow fadeInUp"
+                      data-wow-duration="1.5s"
+                      data-wow-delay="300ms"
+                      align="center">
+                      <a href="https://ewh.ieee.org/sb/gujarat/bvmec/ieee-pes-sul.html#:~:text=NPSS%20AT%20IEEE%20BVM%20SB,Nuclear%20Science%20within%20the%20IRE" class="btn" style="background-image: linear-gradient(to left top, #7f3f98, #6d4284, #5d436e, #4e4259, #414042);" target="_blank">More About NPSS BVM</a>
+                      <!-- <a href="#" class="btn btn-ticket">
+                        <i class="fa fa-plus-circle" aria-hidden="true"></i>
+                        ADD TO CALENDAR</a> -->
+                    </div>
+                  </div>
+                  <!-- single intro text end-->
+                </div>
+            <!-- col end-->
+          </div>
+          <!-- row end-->
+        </div>
+        <!-- container end-->
+      </section>
+
+
+      <!-- ts map direction start-->
+      <section
+        id="contact"
+        class="ts-map-direction wow fadeInUp"
+        data-wow-duration="1.5s"
+        data-wow-delay="400ms">
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-5">
+              <h2 class="column-title" style="color: #7F3F98">
+                <span>Reach us</span>
+                Contact Us....
+              </h2>
+
+              <div class="ts-map-tabs">
+                <ul class="nav" role="tablist">
+                  <li class="nav-item">
+                    <a
+                      class="nav-link active"
+                      href="#registration"
+                      role="tab"
+                      data-toggle="tab">Registration</a>
+                  </li>
+                  <li class="nav-item">
+                    <a
+                      class="nav-link"
+                      href="#coordinators"
+                      role="tab"
+                      data-toggle="tab">Coordinators</a>
+                  </li>
+                </ul>
+
+                <!-- Tab panes -->
+                <div class="tab-content direction-tabs">
+                  <div role="tabpanel" class="tab-pane active" id="registration">
+                    <div class="direction-tabs-content">
+                      <div class="row" style="color: #231F20">
+                        <div class="col-md-6">
+                          <div class="contact-info-box">
+                            <h3>{{Name}}</h3>
+                            <p><strong>Contact:</strong> 009-215-5595</p>
+                            <p><strong>Email:</strong> info@example.com</p>
+                          </div>
+                        </div>
+                        <div class="col-md-6">
+                          <div class="contact-info-box">
+                            <h3>{{Name}}</h3>
+                            <p><strong>Contact:</strong> 009-215-5595</p>
+                            <p><strong>Email:</strong> info@example.com</p>
+                          </div>
+                        </div>
+                      </div>
+                      <!-- row end-->
+                    </div>
+                    <!-- direction tabs end-->
+                  </div>
+                  <div role="tabpanel" class="tab-pane fade" id="coordinators">
+                    <div class="direction-tabs-content">
+                      <div class="row" style="color: #414042">
+                        <div class="col-md-6">
+                          <div class="contact-info-box">
+                            <h3>Dr. Darshan Dalwadi <br> <font size="2px">Branch Counsellor <br> IEEE BVM SB</font></h3>
+                            <h5></h5>
+                            <p><strong>Contact:</strong>+91-9426478026</p>
+                            <p><strong>Email:</strong> info@example.com</p>
+                          </div>
+                        </div>
+                        <div class="col-md-6">
+                          <div class="contact-info-box">
+                            <h3>Yagnik Mehta <br> <font size="2px">Chair <br> IEEE BVM SB</font></h3>
+                            <p><strong>Contact:</strong>+91-9510403775</p>
+                            <p><strong>Email:</strong> info@example.com</p>
+                          </div>
+                        </div>
+                      </div>
+                      <br>
+                      <div class="row" style="color: #414042">
+                        <div class="col-md-6">
+                          <div class="contact-info-box">
+                            <h3>Rudrax Dave <br> <font size="2px">Chair, NPSS Chapter <br> IEEE BVM SB</font></h3>
+                            <p><strong>Contact:</strong>+91-9724051664</p>
+                            <p><strong>Email:</strong> info@example.com</p>
+                          </div>
+                        </div>
+                        <div class="col-md-6">
+                          <div class="contact-info-box">
+                            <h3>Galav Bhatt <br> <font size="2px">Organizing Lead <br> VVMP'20</font></h3>
+                            <p><strong>Contact:</strong>+91-8849508186</p>
+                            <p><strong>Email:</strong> info@example.com</p>
+                          </div>
+                        </div>
+                      </div>
+                      <br>
+                      <div class="row" style="color: #414042">
+                        <div class="col-md-6">
+                          <div class="contact-info-box">
+                            <h3>Gaurav Barve <br> <font size="2px">Organizing Lead <br> VVMP'20</font></h3>
+                            <p><strong>Contact:</strong>+91-7698371157</p>
+                            <p><strong>Email:</strong> info@example.com</p>
+                          </div>
+                        </div>
+                        <div class="col-md-6">
+                          <div class="contact-info-box">
+                            <h3>Dhruv Pokar <br> <font size="2px">Organizing Lead <br> VVMP'20</font></h3>
+                            <p><strong>Contact:</strong>+91-8128111696</p>
+                            <p><strong>Email:</strong> info@example.com</p>
+                          </div>
+                        </div>
+                      </div>
+                      <!-- row end-->
+                    </div>
+                    <!-- direction tabs end-->
+                  </div>
+                </div>
+              </div>
+              <!-- map tabs end-->
+            </div>
+            <!-- col end-->
+            <div class="col-lg-6 offset-lg-1">
+              <div class="ts-map">
+                <div class="mapouter">
+                  <div class="gmap_canvas">
+                    <iframe
+                      src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3684.7168409582896!2d72.92144601427056!3d22.552277535193287!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x395e4e74c03b7749%3A0xab364c66fd4834c!2sBirla%20Vishvakarma%20Mahavidyalaya%20(BVM)!5e0!3m2!1sen!2sin!4v1597639900217!5m2!1sen!2sin"
+                      width="800"
+                      height="600"
+                      frameborder="0"
+                      style="border: 0;"
+                      allowfullscreen=""
+                      aria-hidden="false"
+                      tabindex="0"
+                    ></iframe>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- col end-->
+        </div>
+        <!-- container end-->
+        <!-- <div class="speaker-shap">
+          <img class="shap1" src="images/shap/Direction_memphis3.png" alt="" />
+          <img class="shap2" src="images/shap/Direction_memphis2.png" alt="" />
+          <img class="shap3" src="images/shap/Direction_memphis4.png" alt="" />
+          <img class="shap4" src="images/shap/Direction_memphis1.png" alt="" />
+        </div> -->
+      </section>
+      <!-- ts map direction end-->
+
+        <!-- footer start-->
+        <footer class="ts-footer" style="background-image: linear-gradient(to right bottom, #231f20, #282526, #2e2b2c, #333133, #393739, #3e3c3e, #424143, #474648, #4b4b4d, #4f4f52, #545456, #58595b);">
+          <div class="container">
+            <div class="row">
+              <div class="col-lg-4 mx-auto">
+                <div class="ts-footer-social text-center mb-30">
+                <img src="images/logos/IEEE BVM SB White.png" alt="" height="70px" width="100px">
+                </div>
+              </div>
+              <div class="col-lg-4 mx-auto">
+                <div class="ts-footer-social text-center mb-30">
+                <img src="images/logos/bvm-logo.png" alt="" height="70px" width="70px">
+                </div>
+              </div>
+              <div class="col-lg-4 mx-auto">
+                <div class="ts-footer-social text-center mb-30">
+                <img src="images/logos/NPSS White.png" alt="" height="70px" width="80px">
+                </div>
+              </div>
+          </div>
+            <div class="row">
+              <div class="col-lg-8 mx-auto">
+                <div class="ts-footer-social text-center mb-30">
+                  <ul>
+                    <li>
+                      <a href="https://www.facebook.com/ieeebvm/" target="_blank"><i class="fa fa-facebook"></i></a>
+                    </li>
+                    <li>
+                      <a href="https://twitter.com/ieeebvm" target="_blank"><i class="fa fa-twitter"></i></a>
+                    </li>
+                    <li>
+                      <a href="https://in.linkedin.com/in/ieee-bvm-sb-55928918b" target="_blank"><i class="fa fa-linkedin"></i></a>
+                    </li>
+                    <li>
+                      <a href="https://www.instagram.com/ieee_bvm/" target="_blank"><i class="fa fa-instagram"></i></a>
+                    </li>
+                    <li>
+                      <a href="https://www.youtube.com/channel/UC97so9bGuHyzBhqFE1U6Gtg" target="_blank"><i class="fa fa-youtube"></i></a>
+                    </li>
+                  </ul>
+                </div>
+                <!-- footer social end-->
+                <div class="footer-menu text-center mb-25">
+                  <ul>
+                    <li><a href="index.php#aboutvvmp">About VVMP</a></li>
+                    <li><a href="index.php#experts">Experts</a></li>
+                    <li><a href="index.php#fees">Tickets</a></li>
+                    <li><a href="index.php#contact">Contact</a></li>
+                  </ul>
+                </div>
+                <!-- footer menu end-->
+                <div class="copyright-text text-center">
+                  <p>
+                    Copyright ©
+                    <script type="text/javascript">
+                      document.write(new Date().getFullYear());
+                    </script>
+                    <br />
+                    IEEE BVM SB | All Rights Reserved.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </footer>
+        <!-- footer end-->
+        <div class="BackTo">
+          <a href="#" class="fa fa-angle-up" aria-hidden="true"></a>
+        </div>
+      </div>
+      <!-- ts footer area end-->
+
+      <!-- Javascript Files
+               ================================================== -->
+      <!-- initialize jQuery Library -->
+      <script src="js/jquery.js"></script>
+
+      <script src="js/popper.min.js"></script>
+      <!-- Bootstrap jQuery -->
+      <script src="js/bootstrap.min.js"></script>
+      <!-- Counter -->
+      <script src="js/jquery.appear.min.js"></script>
+      <!-- Countdown -->
+      <script src="js/jquery.jCounter.js"></script>
+      <!-- magnific-popup -->
+      <script src="js/jquery.magnific-popup.min.js"></script>
+      <!-- carousel -->
+      <script src="js/owl.carousel.min.js"></script>
+      <!-- Waypoints -->
+      <script src="js/wow.min.js"></script>
+      <!-- isotop -->
+      <script src="js/isotope.pkgd.min.js"></script>
+      <!-- scrollme -->
+      <script src="js/jquery.scrollme.js"></script>
+      <!-- practicle JS -->
+      <script type="js/particles.min.js"></script>
+
+      <!-- Template custom -->
+      <script src="js/main.js"></script>
+    </div>
+    <!-- Body inner end -->
+  </body>
+
+  <!-- Mirrored from demo.themewinter.com/html/exhibz/index-7.html by HTTrack Website Copier/3.x [XR&CO'2014], Sun, 16 Aug 2020 19:36:52 GMT -->
+</html>
