@@ -3115,7 +3115,7 @@ img.pull-right {
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center center;
-  padding-top: 170px;
+  padding-top: 100px;
 }
 
 .ts-single-outcome {
@@ -3147,6 +3147,14 @@ img.pull-right {
   color: #fff;
 }
 .ts-single-outcome:hover i {
+  -webkit-animation-name: shake;
+  animation-name: shake;
+  -webkit-animation-duration: 1s;
+  animation-duration: 1s;
+  -webkit-animation-fill-mode: both;
+  animation-fill-mode: both;
+}
+.ts-single-outcome:hover img {
   -webkit-animation-name: shake;
   animation-name: shake;
   -webkit-animation-duration: 1s;
